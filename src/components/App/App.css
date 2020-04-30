@@ -1,7 +1,12 @@
 /* Universal Styles */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Ubuntu&display=swap');
 
 html {
   font-size: 18px;
+}
+
+body {
+  background-color: rgb(18, 18, 18);
 }
 
 @media only screen and (max-width: 560px) {
@@ -31,14 +36,19 @@ input:focus {
 /* App Styles */
 
 .App {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
   padding: .66rem 0;
   text-align: center;
   background-color: #cca353;
-  font-family: Poppins, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
   color: #fff;
+}
+
+.App-logo {
+  text-align: center;
+  background-color: rgb(18, 18, 18); 
 }

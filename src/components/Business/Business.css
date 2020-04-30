@@ -12,6 +12,7 @@
 }
 
 .Business h2 {
+  color: #ffffff;
   margin-bottom: .5rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -23,6 +24,7 @@
 }
 
 .Business-information p {
+  color: #ffffff;
   font-size: .88rem;
   font-weight: 300;
   line-height: 1rem;
@@ -43,7 +45,8 @@
 
 .Business-reviews h3 {
   color: #CCA353;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 14pt;
 }
 
 .Business-reviews .rating {

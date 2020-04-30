@@ -2,7 +2,11 @@ import React from 'react';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
+import Footer from '../Footer/Footer';
 import Yelp from '../../util/Yelp';
+import Logo from './logo.jpg';
+import  {Animated} from 'react-animated-css';
+
 
 /*const business = {
   imageSrc: 'https://images.squarespace-cdn.com/content/54e78c74e4b0a4a2246be378/1428567650776-7OZ700XVS48FM0YAP64I/Reggae_Grill_Logo_4C+rectangular.png?content-type=image%2Fpng',
@@ -44,9 +48,16 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>HakList</h1>
-        <SearchBar searchYelp={this.searchYelp} />
+        <div className="App-logo">
+          <img src={Logo} width="100" height="100" />
+        </div>
+        <Animated animationIn="slideInDown" animationInDuration={1000} isVisible={true}>
+          <div>
+            <SearchBar searchYelp={this.searchYelp} />
+          </div>
+        </Animated>
         <BusinessList businesses={this.state.businesses} />
+        <Footer />
       </div>
     );
   }
