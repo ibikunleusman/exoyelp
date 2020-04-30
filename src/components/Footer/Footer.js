@@ -9,10 +9,6 @@ class Footer extends React.Component {
                     <div className="col-md-12">
                         <p>Designed and Built By Abdulhakeem Usman</p>
                     </div>
-                    <div className="col-md-12">
-                        <span>Github</span>
-                        <span>Website</span>
-                    </div>
                 </div>
             </div>
         );
